@@ -1,9 +1,9 @@
-Awesome Agent Skills
+# Awesome Agent Skills
 
 English | 繁體中文 | 简体中文 | 日本語 | 한국어 | Español
 
 A curated list of skills, tools, and capabilities for AI coding agents.
-Table of Contents
+## Table of Contents
 
     What Are Agent Skills?
     Compatible Agents
@@ -17,12 +17,12 @@ Table of Contents
     License
     References
 
-What Are Agent Skills?
+## What Are Agent Skills?
 
 Think of Agent Skills as "how-to guides" for AI assistants. Instead of the AI needing to know everything upfront, skills let it learn new abilities on the fly, like giving someone a recipe card instead of making them memorize an entire cookbook.
 
 Skills are simple text files (called SKILL.md) that teach an AI how to do specific tasks. When you ask the AI to do something, it finds the right skill, reads the instructions, and gets to work.
-How It Works
+### How It Works
 
 Skills load in three stages:
 
@@ -30,14 +30,14 @@ Skills load in three stages:
     Load - When a skill is needed, the AI reads the full instructions
     Use - The AI follows the instructions and accesses any helper files
 
-Why This Matters
+### Why This Matters
 
     Faster and lighter - The AI only loads what it needs, when it needs it
     Works everywhere - Create a skill once, use it with any compatible AI tool
     Easy to share - Skills are just files you can copy, download, or share on GitHub
 
 Skills are instructions, not code. The AI reads them like a human would read a guide, then follows the steps.
-Compatible Agents
+## Compatible Agents
 
 The following platforms have documented support for Agent Skills:
 Agent 	Documentation
@@ -47,8 +47,8 @@ Codex (OpenAI) 	developers.openai.com
 GitHub Copilot 	docs.github.com
 VS Code 	code.visualstudio.com
 Antigravity 	antigravity.google
-Skill List
-Official Claude Skills (Document Processing)
+## Skill List
+### Official Claude Skills (Document Processing)
 
 Claude provides built-in skills for common document types:
 Skill 	Description 	Source
@@ -56,7 +56,7 @@ docx 	Create, edit, analyze Word documents with tracked changes 	anthropics/skil
 xlsx 	Spreadsheet manipulation: formulas, charts, data transformations 	anthropics/skills
 pptx 	Read, generate, and adjust slides, layouts, templates 	anthropics/skills
 pdf 	Extract text, tables, metadata from PDFs 	anthropics/skills
-Official OpenAI Codex Skills
+### Official OpenAI Codex Skills
 
 Codex supports skills at different scopes:
 Skill Scope 	Location 	Suggested Use
@@ -66,16 +66,16 @@ REPO 	$REPO_ROOT/.codex/skills 	Root skills for everyone using the repository
 USER 	$CODEX_HOME/skills (default: ~/.codex/skills) 	Personal skills that apply to any repository
 ADMIN 	/etc/codex/skills 	SDK scripts, automation, and default admin skills
 SYSTEM 	Bundled with Codex 	Built-in skills like skill-creator and plan
-Official HuggingFace Skills
+### Official HuggingFace Skills
 Skill 	Description 	Source
 hf_dataset_creator 	Prompts, templates, and scripts for creating structured training datasets 	huggingface/skills
 hf_model_evaluation 	Instructions plus utilities for orchestrating evaluation jobs, generating reports, and mapping metrics 	huggingface/skills
 hf-llm-trainer 	Comprehensive training skill with guidance, helper scripts, cost estimators 	huggingface/skills
 hf-paper-publisher 	Tools for publishing and managing research papers on Hugging Face Hub 	huggingface/skills
-Community Skills
+## Community Skills
 
 Community-maintained skills and collections (verify before use):
-Skill Collections
+### Skill Collections
 Repository 	Description
 anthropics/skills 	Official Anthropic collection (document editing, data analysis)
 openai/skills 	Official OpenAI Codex skills catalog
@@ -334,7 +334,7 @@ LangChain Tools
     Python REPL - Execute Python code
     Custom Tools Guide - How to use the @tool decorator
 
-Frequently Asked Questions
+## Frequently Asked Questions
 What are Agent Skills?
 
 Agent Skills are instruction files that teach AI assistants how to do specific tasks. Think of them as "how-to guides" that the AI reads and follows. They only load when needed, so the AI stays fast and focused.
@@ -348,7 +348,7 @@ They do different things and work great together:
     Agent Skills = teach the AI how to do something (workflows, best practices)
     MCP = help the AI access things (APIs, databases, external tools)
 
-Which AI tools support Agent Skills?
+## Which AI tools support Agent Skills?
 
 Currently supported: Claude (Claude.ai and Claude Code), GitHub Copilot, VS Code, and others. The list is growing as more tools adopt the standard.
 Do Agent Skills run code?
@@ -373,7 +373,7 @@ This repository follows the Agent Skills open development model. Contributions a
     Keep SKILL.md under 500 lines for optimal performance
     Verify that skills actually exist before adding them
 
-License
+## License
 
 MIT License - see LICENSE file for details.
 References
